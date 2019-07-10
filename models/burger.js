@@ -6,12 +6,12 @@ var burger = {
             callback(res)
         });
     },
-    insertOne: function (callback) {
+    insertOne: function (cols, vals, callback) {
         orm.insertOne("burgers", cols, vals, function (res) {
             callback(res)
         });
     },
-    updateOne: function (callback) {
+    updateOne: function (vals, condition, callback) {
         orm.updateOne("burgers", vals, condition, function (res) {
             callback(res)
         });
